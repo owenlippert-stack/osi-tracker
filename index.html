@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --paper:#E7E4DC; --panel:#EFEDE6; --ink:#15171A; --muted:#5C6066;
+    --rule:#C7C3B8; --decline:#A33A32; --warn:#9C7A1B; --stable:#5C6066; --rise:#2E6F5E;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --sans:"Helvetica Neue",Arial,system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;line-height:1.45}
+  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 40px}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--muted)}
+  h1{font-size:26px;letter-spacing:-.01em;margin:.25em 0 .1em;font-weight:800;text-transform:uppercase}
+  .sub{color:var(--muted);font-size:13.5px;margin-bottom:18px}
+  .pickrow{display:flex;align-items:center;gap:10px;border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);padding:12px 0;margin-bottom:22px;flex-wrap:wrap}
+  .pickrow label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  select{font-family:var(--sans);font-size:15px;padding:7px 30px 7px 10px;border:1px solid var(--ink);
+    background:var(--panel);color:var(--ink);border-radius:0;-webkit-appearance:none;appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2315171A'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 10px center;min-width:200px}
+  select:focus,button:focus{outline:2px solid var(--ink);outline-offset:1px}
+  .panel{background:var(--panel);border:1px solid var(--rule)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:18px 20px 12px}
+  .scoreblock{display:flex;align-items:baseline;gap:10px}
+  .osi{font-family:var(--mono);font-size:58px;font-weight:600;line-height:.9;letter-spacing:-.02em}
+  .osi small{font-size:15px;color:var(--muted);font-weight:400}
+  .cname{font-size:18px;font-weight:700}
+  .verdict{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+    padding:5px 9px;border:1px solid currentColor;white-space:nowrap}
+  .delta{font-family:var(--mono);font-size:13px;margin-top:6px}
+  .meterwrap{padding:6px 20px 4px}
+  .axis{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:2px}
+  .traj{padding:4px 20px 0}
+  .trlab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:8px 0 2px}
+  .cats{padding:10px 20px 18px;display:grid;gap:9px}
+  .cat{display:grid;grid-template-columns:148px 1fr 42px;align-items:center;gap:10px}
+  .cat .lab{font-size:12.5px;color:var(--ink)}
+  .bar{height:9px;background:#dad6cb;position:relative;overflow:hidden}
+  .bar i{position:absolute;left:0;top:0;bottom:0;display:block}
+  .cat .val{font-family:var(--mono);font-size:12px;text-align:right;color:var(--muted)}
+  .scan{border-top:1px solid var(--rule);padding:14px 20px 18px;font-size:13.5px}
+  .scan .lab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .foot{margin-top:18px;font-size:11.5px;color:var(--muted);line-height:1.5}
+  .foot b{color:var(--ink);font-weight:700}
+  @media (max-width:520px){.cat{grid-template-columns:112px 1fr 40px}.osi{font-size:46px}.head{flex-direction:column}}
+  @media (prefers-reduced-motion:no-preference){.bar i,.needle{transition:all .5s cubic-bezier(.2,.7,.2,1)}}
+</style>
+<title>Opposition Space — Self-Scan · Opposition International</title>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Opposition International · Tracker</div>
+  <h1>Opposition Space — Self-Scan</h1>
+  <div class="sub">Pick a country to read its Opposition Strength Index (OSI) trajectory and latest year-over-year scan, drawn from V-Dem v16.</div>
+  <div class="pickrow">
+    <label for="sel">Country</label>
+    <select id="sel"></select>
+    <span id="rank" style="font-family:var(--mono);font-size:11px;color:var(--muted)"></span>
+  </div>
+  <div class="panel">
+    <div class="head">
+      <div>
+        <div class="cname" id="cn"></div>
+        <div class="scoreblock"><span class="osi" id="osi">–</span><small>/ 100 OSI · 2025</small></div>
+        <div class="delta" id="dl"></div>
+      </div>
+      <div class="verdict" id="vd"></div>
+    </div>
+    <div class="meterwrap">
+      <svg id="meter" viewBox="0 0 700 26" width="100%" height="26" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <div class="axis"><span>0 · closed</span><span>50</span><span>100 · open</span></div>
+    </div>
+    <div class="traj">
+      <div class="trlab">OSI trajectory · 2015–2025</div>
+      <svg id="spark" viewBox="0 0 700 90" width="100%" height="90" preserveAspectRatio="none"></svg>
+    </div>
+    <div class="cats" id="cats"></div>
+    <div class="scan">
+      <div class="lab">Change scan · 2024 → 2025</div>
+      <div id="scan"></div>
+    </div>
+  </div>
+  <div class="foot">
+    <b>About this reading.</b> The OSI is an analytical construct built by Opposition International from a subset of V-Dem indicators (opposition autonomy, accountability, party cohesion, electoral integrity, civil liberties). It is <b>not</b> an official V-Dem index. Scores are annual; the latest reflect the situation on 31 Dec 2025. Election sub-scores carry forward from the last coded election, so they can lag a recent transition.<br>
+    Source data: <b>V-Dem Country-Year Dataset v16</b> (Coppedge et al., Varieties of Democracy Project, 2026), used under CC-BY.
+  </div>
+</div>
+
+<script>
+let DATA = {};
+const COLORS_INK = () => '#15171A';
+
+const COLORS = {decline:'#A33A32',warn:'#9C7A1B',stable:'#5C6066',rise:'#2E6F5E'};
+const ALERT = {critical:{c:COLORS.decline,t:'Closing'},warning:{c:COLORS.warn,t:'Slipping'},
+  stable:{c:COLORS.stable,t:'Holding'},positive:{c:COLORS.rise,t:'Opening'},unknown:{c:COLORS.stable,t:'No data'}};
+const YEARS=[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
+const CATLAB={opposition_strength:'Opposition strength',accountability:'Accountability',
+  party_cohesion:'Party cohesion',electoral:'Electoral integrity',civil_liberties:'Civil liberties'};
+function sigColor(v){return v>=60?COLORS.rise:v>=40?COLORS.stable:v>=22?COLORS.warn:COLORS.decline}
+
+const sel=document.getElementById('sel');
+
+function render(iso){
+  const d=DATA[iso], cur=d.o[10];
+  document.getElementById('cn').textContent=d.n;
+  document.getElementById('osi').textContent=cur==null?'–':cur.toFixed(0);
+  const a=ALERT[d.a]||ALERT.unknown;
+  const vd=document.getElementById('vd');vd.textContent=a.t;vd.style.color=a.c;
+  const dl=document.getElementById('dl');
+  if(d.d==null){dl.textContent='';}
+  else{const up=d.d>0;dl.innerHTML='Δ 2024→25 &nbsp;'+(up?'+':'')+d.d.toFixed(1)+' OSI';
+    dl.style.color=up?COLORS.rise:(d.d< -0.5?COLORS.decline:COLORS.stable);}
+  const rk=(window.__ranked||[]).indexOf(iso);
+  document.getElementById('rank').textContent=rk>=0?('rank '+(rk+1)+' / '+(window.__ranked||[]).length+' open'):'';
+
+  // meter
+  const m=document.getElementById('meter');
+  const x=cur==null?0:cur/100*700;
+  m.innerHTML=`<rect x="0" y="9" width="700" height="8" fill="#dad6cb"/>
+    <rect class="needle" x="0" y="9" width="${x}" height="8" fill="${sigColor(cur||0)}"/>
+    <line x1="350" y1="5" x2="350" y2="21" stroke="#C7C3B8" stroke-width="1"/>
+    <polygon class="needle" points="${x-5},4 ${x+5},4 ${x},11" fill="${COLORS_INK()}"/>`;
+
+  // sparkline
+  const pts=d.o.map((v,i)=>v==null?null:[i/10*700,90-(v/100*76)-7]).filter(Boolean);
+  const sp=document.getElementById('spark');
+  if(pts.length>1){
+    const line=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+    const area=line+` L${pts[pts.length-1][0].toFixed(1)} 90 L${pts[0][0].toFixed(1)} 90 Z`;
+    const col=sigColor(cur||0);
+    sp.innerHTML=`<line x1="0" y1="${90-(50/100*76)-7}" x2="700" y2="${90-(50/100*76)-7}" stroke="#d4d0c5" stroke-dasharray="3 4"/>
+      <path d="${area}" fill="${col}" opacity="0.10"/>
+      <path d="${line}" fill="none" stroke="${col}" stroke-width="2"/>
+      <circle cx="${pts[pts.length-1][0].toFixed(1)}" cy="${pts[pts.length-1][1].toFixed(1)}" r="3.5" fill="${col}"/>`;
+  } else sp.innerHTML='';
+
+  // categories
+  const cw=document.getElementById('cats');cw.innerHTML='';
+  for(const k of Object.keys(CATLAB)){
+    const v=d.c[k];
+    const row=document.createElement('div');row.className='cat';
+    row.innerHTML=`<span class="lab">${CATLAB[k]}</span>
+      <span class="bar"><i style="width:${v==null?0:v}%;background:${sigColor(v||0)}"></i></span>
+      <span class="val">${v==null?'—':v.toFixed(0)}</span>`;
+    cw.appendChild(row);
+  }
+
+  // scan sentence
+  const s=document.getElementById('scan');
+  const lows=Object.entries(d.c).filter(([k,v])=>v!=null&&v<35).map(([k])=>CATLAB[k].toLowerCase());
+  let verb = d.a==='critical'?'closing sharply':d.a==='warning'?'narrowing':d.a==='positive'?'reopening':'broadly stable';
+  let txt=`Opposition space here is <b>${verb}</b> over the past year`+
+    (d.d!=null?` (OSI ${d.d>0?'+':''}${d.d.toFixed(1)})`:'')+'. ';
+  txt+= lows.length? `The tightest constraints are in <b>${lows.join('</b>, <b>')}</b>.`
+                   : `No single category is in the critical band.`;
+  s.innerHTML=txt;
+}
+
+
+sel.addEventListener('change',e=>render(e.target.value));
+
+// ---- data loading: fetch the JSON data layer, then wire up the UI ----
+function boot(countries){
+  DATA = countries;
+  const isosLocal = Object.keys(DATA).sort((a,b)=>DATA[a].n.localeCompare(DATA[b].n));
+  for(const iso of isosLocal){const o=document.createElement('option');o.value=iso;o.textContent=DATA[iso].n;sel.appendChild(o);}
+  window.__ranked = isosLocal.filter(i=>DATA[i].o[10]!=null).sort((a,b)=>DATA[b].o[10]-DATA[a].o[10]);
+  // deep-link: ?c=ISO3 opens straight to that country (used by the Slack alert links)
+  const q=new URLSearchParams(location.search).get('c');
+  const start=(q&&DATA[q.toUpperCase()])?q.toUpperCase():(DATA['LKA']?'LKA':isosLocal[0]);
+  sel.value = start;
+  render(sel.value);
+  // keep the URL in sync when the user picks a country
+  sel.addEventListener('change',()=>{const u=new URL(location);u.searchParams.set('c',sel.value);history.replaceState(null,'',u);});
+}
+
+fetch('osi_selfscan.json')
+  .then(r=>{ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+  .then(p=>boot(p.countries))
+  .catch(err=>{
+    document.getElementById('cn').textContent='Data failed to load';
+    document.getElementById('scan').innerHTML='Could not load <code>osi_selfscan.json</code>. If you opened this file directly (file://), run a local web server instead — see README. ('+err.message+')';
+  });
+</script>
+</body>
+</html>

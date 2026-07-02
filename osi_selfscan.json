@@ -1,0 +1,4498 @@
+{
+"meta": {
+"index": "Opposition Strength Index (OSI)",
+"source": "V-Dem Country-Year Dataset v16 (Coppedge et al., Varieties of Democracy Project, 2026), used under CC-BY.",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+],
+"note": "OSI is an analytical construct built by Opposition International from a subset of V-Dem indicators. Not an official V-Dem index. Annual; latest values reflect 31 Dec 2025.",
+"generated_from": "OSI_self_scan.html"
+},
+"countries": {
+"AFG": {
+"n": "Afghanistan",
+"o": [
+58.0,
+56.6,
+56.1,
+54.5,
+51.5,
+50.2,
+23.3,
+16.0,
+13.9,
+19.7,
+9.2
+],
+"c": {
+"opposition_strength": 0.0,
+"accountability": 12.4,
+"party_cohesion": 0.0,
+"electoral": 25.0,
+"civil_liberties": 8.2
+},
+"d": -10.5,
+"a": "critical"
+},
+"AGO": {
+"n": "Angola",
+"o": [
+37.7,
+37.7,
+41.0,
+43.2,
+43.2,
+41.8,
+42.8,
+41.8,
+41.1,
+41.4,
+41.4
+],
+"c": {
+"opposition_strength": 62.5,
+"accountability": 21.3,
+"party_cohesion": 58.3,
+"electoral": 40.0,
+"civil_liberties": 52.4
+},
+"d": 0.0,
+"a": "stable"
+},
+"ALB": {
+"n": "Albania",
+"o": [
+72.4,
+72.4,
+72.4,
+72.3,
+75.4,
+75.5,
+73.6,
+73.7,
+72.8,
+72.4,
+69.2
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 69.8,
+"party_cohesion": 63.9,
+"electoral": 60.0,
+"civil_liberties": 71.6
+},
+"d": -3.2,
+"a": "warning"
+},
+"ARE": {
+"n": "United Arab Emirates",
+"o": [
+31.6,
+31.6,
+31.4,
+31.4,
+30.5,
+31.4,
+29.3,
+31.4,
+31.4,
+31.4,
+31.7
+],
+"c": {
+"opposition_strength": 0.0,
+"accountability": 22.0,
+"party_cohesion": 52.8,
+"electoral": 60.0,
+"civil_liberties": 19.0
+},
+"d": 0.3,
+"a": "stable"
+},
+"ARG": {
+"n": "Argentina",
+"o": [
+83.6,
+87.5,
+86.1,
+88.8,
+85.6,
+85.1,
+86.8,
+85.3,
+87.5,
+86.7,
+83.4
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 77.3,
+"party_cohesion": 80.6,
+"electoral": 90.0,
+"civil_liberties": 73.7
+},
+"d": -3.3,
+"a": "warning"
+},
+"ARM": {
+"n": "Armenia",
+"o": [
+55.2,
+56.5,
+57.4,
+81.5,
+79.9,
+79.9,
+74.3,
+71.3,
+74.7,
+75.3,
+70.2
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 54.1,
+"party_cohesion": 83.3,
+"electoral": 75.0,
+"civil_liberties": 65.4
+},
+"d": -5.1,
+"a": "critical"
+},
+"AUS": {
+"n": "Australia",
+"o": [
+97.3,
+97.3,
+97.0,
+96.9,
+95.4,
+95.6,
+95.6,
+93.8,
+93.8,
+93.7,
+93.7
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 90.8,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 95.4
+},
+"d": 0.0,
+"a": "stable"
+},
+"AUT": {
+"n": "Austria",
+"o": [
+95.4,
+93.0,
+94.2,
+93.9,
+94.1,
+92.5,
+92.4,
+91.8,
+92.2,
+91.8,
+91.7
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 84.0,
+"party_cohesion": 91.7,
+"electoral": 95.0,
+"civil_liberties": 90.7
+},
+"d": -0.1,
+"a": "stable"
+},
+"AZE": {
+"n": "Azerbaijan",
+"o": [
+31.4,
+31.3,
+31.6,
+32.2,
+33.9,
+34.3,
+33.0,
+29.9,
+30.2,
+25.0,
+26.9
+],
+"c": {
+"opposition_strength": 50.0,
+"accountability": 6.6,
+"party_cohesion": 50.0,
+"electoral": 20.0,
+"civil_liberties": 10.2
+},
+"d": 1.9,
+"a": "stable"
+},
+"BDI": {
+"n": "Burundi",
+"o": [
+36.5,
+37.1,
+36.8,
+33.9,
+36.3,
+38.2,
+39.4,
+40.7,
+35.1,
+34.6,
+35.9
+],
+"c": {
+"opposition_strength": 50.0,
+"accountability": 32.9,
+"party_cohesion": 38.9,
+"electoral": 25.0,
+"civil_liberties": 28.2
+},
+"d": 1.3,
+"a": "stable"
+},
+"BEL": {
+"n": "Belgium",
+"o": [
+89.9,
+92.4,
+92.3,
+92.3,
+94.0,
+92.0,
+92.0,
+94.0,
+91.9,
+91.9,
+91.8
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 84.2,
+"party_cohesion": 83.3,
+"electoral": 100.0,
+"civil_liberties": 90.2
+},
+"d": -0.1,
+"a": "stable"
+},
+"BEN": {
+"n": "Benin",
+"o": [
+82.0,
+84.9,
+80.9,
+76.1,
+59.4,
+53.6,
+53.6,
+55.1,
+59.4,
+57.4,
+59.8
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 30.5,
+"party_cohesion": 80.6,
+"electoral": 75.0,
+"civil_liberties": 70.0
+},
+"d": 2.4,
+"a": "positive"
+},
+"BFA": {
+"n": "Burkina Faso",
+"o": [
+67.3,
+68.9,
+68.9,
+68.6,
+68.5,
+70.3,
+70.1,
+65.5,
+57.3,
+52.5,
+46.4
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 21.7,
+"party_cohesion": 63.9,
+"electoral": 50.0,
+"civil_liberties": 35.7
+},
+"d": -6.1,
+"a": "critical"
+},
+"BGD": {
+"n": "Bangladesh",
+"o": [
+39.4,
+40.6,
+40.6,
+40.5,
+39.0,
+39.0,
+37.7,
+38.9,
+35.1,
+55.7,
+63.2
+],
+"c": {
+"opposition_strength": 91.7,
+"accountability": 47.9,
+"party_cohesion": 83.3,
+"electoral": 25.0,
+"civil_liberties": 66.9
+},
+"d": 7.5,
+"a": "positive"
+},
+"BGR": {
+"n": "Bulgaria",
+"o": [
+83.2,
+83.2,
+80.0,
+83.2,
+83.3,
+78.8,
+82.3,
+87.8,
+85.8,
+79.7,
+80.5
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 81.8,
+"party_cohesion": 63.9,
+"electoral": 70.0,
+"civil_liberties": 74.7
+},
+"d": 0.8,
+"a": "stable"
+},
+"BHR": {
+"n": "Bahrain",
+"o": [
+25.3,
+23.7,
+23.5,
+27.3,
+25.1,
+25.2,
+25.8,
+23.0,
+25.7,
+25.8,
+25.8
+],
+"c": {
+"opposition_strength": 25.0,
+"accountability": 15.7,
+"party_cohesion": 36.1,
+"electoral": 35.0,
+"civil_liberties": 18.8
+},
+"d": 0.0,
+"a": "stable"
+},
+"BIH": {
+"n": "Bosnia and Herzegovina",
+"o": [
+60.1,
+58.4,
+58.3,
+58.5,
+58.4,
+58.4,
+58.5,
+58.5,
+57.3,
+57.1,
+57.4
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 39.3,
+"party_cohesion": 50.0,
+"electoral": 65.0,
+"civil_liberties": 75.4
+},
+"d": 0.3,
+"a": "stable"
+},
+"BLR": {
+"n": "Belarus",
+"o": [
+39.0,
+40.8,
+40.8,
+41.0,
+40.8,
+34.3,
+33.0,
+32.8,
+28.4,
+27.2,
+27.2
+],
+"c": {
+"opposition_strength": 31.2,
+"accountability": 2.6,
+"party_cohesion": 75.0,
+"electoral": 30.0,
+"civil_liberties": 4.3
+},
+"d": 0.0,
+"a": "stable"
+},
+"BOL": {
+"n": "Bolivia",
+"o": [
+64.7,
+65.9,
+65.5,
+64.2,
+54.1,
+79.8,
+65.3,
+62.9,
+63.1,
+60.4,
+72.2
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 56.6,
+"party_cohesion": 63.9,
+"electoral": 85.0,
+"civil_liberties": 70.0
+},
+"d": 11.8,
+"a": "positive"
+},
+"BRA": {
+"n": "Brazil",
+"o": [
+90.4,
+88.4,
+85.2,
+85.1,
+83.2,
+84.5,
+86.2,
+86.7,
+89.1,
+89.2,
+89.0
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 84.4,
+"party_cohesion": 80.6,
+"electoral": 90.0,
+"civil_liberties": 93.6
+},
+"d": -0.2,
+"a": "stable"
+},
+"BRB": {
+"n": "Barbados",
+"o": [
+84.4,
+84.4,
+84.3,
+84.2,
+84.3,
+85.7,
+85.7,
+85.7,
+85.8,
+85.8,
+83.3
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 79.3,
+"party_cohesion": 75.0,
+"electoral": 90.0,
+"civil_liberties": 92.3
+},
+"d": -2.5,
+"a": "warning"
+},
+"BTN": {
+"n": "Bhutan",
+"o": [
+79.7,
+79.6,
+78.0,
+83.5,
+84.0,
+81.1,
+82.1,
+77.8,
+79.4,
+80.8,
+81.1
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 73.9,
+"party_cohesion": 83.3,
+"electoral": 90.0,
+"civil_liberties": 68.1
+},
+"d": 0.3,
+"a": "stable"
+},
+"BWA": {
+"n": "Botswana",
+"o": [
+88.0,
+88.0,
+84.8,
+84.9,
+79.8,
+75.4,
+77.3,
+70.3,
+69.0,
+77.1,
+77.0
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 75.8,
+"party_cohesion": 58.3,
+"electoral": 80.0,
+"civil_liberties": 82.5
+},
+"d": -0.1,
+"a": "stable"
+},
+"CAF": {
+"n": "Central African Republic",
+"o": [
+61.3,
+61.3,
+66.7,
+65.8,
+60.8,
+59.6,
+52.5,
+51.4,
+36.3,
+37.5,
+35.2
+],
+"c": {
+"opposition_strength": 62.5,
+"accountability": 15.6,
+"party_cohesion": 80.6,
+"electoral": 10.0,
+"civil_liberties": 47.0
+},
+"d": -2.3,
+"a": "warning"
+},
+"CAN": {
+"n": "Canada",
+"o": [
+88.7,
+88.8,
+88.9,
+88.6,
+88.1,
+87.8,
+88.1,
+88.2,
+88.0,
+88.0,
+88.0
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 81.8,
+"party_cohesion": 83.3,
+"electoral": 100.0,
+"civil_liberties": 88.2
+},
+"d": 0.0,
+"a": "stable"
+},
+"CHE": {
+"n": "Switzerland",
+"o": [
+95.5,
+95.5,
+95.8,
+95.8,
+95.8,
+95.6,
+95.6,
+95.5,
+95.5,
+95.9,
+95.9
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 93.2,
+"party_cohesion": 88.9,
+"electoral": 100.0,
+"civil_liberties": 94.9
+},
+"d": 0.0,
+"a": "stable"
+},
+"CHL": {
+"n": "Chile",
+"o": [
+97.5,
+97.5,
+97.5,
+97.1,
+97.0,
+96.8,
+96.9,
+98.4,
+98.5,
+98.4,
+98.3
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 95.3,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 84.7
+},
+"d": -0.1,
+"a": "stable"
+},
+"CHN": {
+"n": "China",
+"o": [
+38.2,
+38.1,
+38.1,
+39.5,
+39.3,
+39.3,
+40.6,
+37.6,
+36.8,
+36.5,
+35.3
+],
+"c": {
+"opposition_strength": 0.0,
+"accountability": 21.7,
+"party_cohesion": 91.7,
+"electoral": 55.0,
+"civil_liberties": 2.4
+},
+"d": -1.2,
+"a": "stable"
+},
+"CIV": {
+"n": "Ivory Coast",
+"o": [
+60.1,
+60.1,
+61.2,
+59.3,
+59.2,
+48.0,
+51.2,
+51.3,
+51.2,
+53.9,
+47.0
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 30.3,
+"party_cohesion": 47.2,
+"electoral": 50.0,
+"civil_liberties": 68.0
+},
+"d": -6.9,
+"a": "critical"
+},
+"CMR": {
+"n": "Cameroon",
+"o": [
+43.8,
+44.8,
+45.1,
+39.3,
+39.1,
+39.2,
+40.3,
+40.7,
+34.5,
+38.2,
+37.8
+],
+"c": {
+"opposition_strength": 56.2,
+"accountability": 32.7,
+"party_cohesion": 58.3,
+"electoral": 15.0,
+"civil_liberties": 37.5
+},
+"d": -0.4,
+"a": "stable"
+},
+"COD": {
+"n": "Democratic Republic of the Congo",
+"o": [
+45.2,
+45.1,
+38.6,
+38.5,
+40.4,
+45.2,
+46.4,
+47.0,
+44.2,
+46.0,
+46.3
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 23.7,
+"party_cohesion": 83.3,
+"electoral": 35.0,
+"civil_liberties": 50.8
+},
+"d": 0.3,
+"a": "stable"
+},
+"COG": {
+"n": "Republic of the Congo",
+"o": [
+40.8,
+38.3,
+39.6,
+39.8,
+39.6,
+41.9,
+41.6,
+41.3,
+41.4,
+41.4,
+41.2
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 29.8,
+"party_cohesion": 50.0,
+"electoral": 20.0,
+"civil_liberties": 31.0
+},
+"d": -0.2,
+"a": "stable"
+},
+"COL": {
+"n": "Colombia",
+"o": [
+80.9,
+79.6,
+78.2,
+77.8,
+78.9,
+78.5,
+78.3,
+79.4,
+79.6,
+80.8,
+82.9
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 86.2,
+"party_cohesion": 55.6,
+"electoral": 90.0,
+"civil_liberties": 76.1
+},
+"d": 2.1,
+"a": "positive"
+},
+"COM": {
+"n": "Comoros",
+"o": [
+60.3,
+61.8,
+47.7,
+46.3,
+38.2,
+37.7,
+37.8,
+36.5,
+37.6,
+41.3,
+45.1
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 27.9,
+"party_cohesion": 63.9,
+"electoral": 30.0,
+"civil_liberties": 48.1
+},
+"d": 3.8,
+"a": "positive"
+},
+"CPV": {
+"n": "Cape Verde",
+"o": [
+89.2,
+87.4,
+87.4,
+89.4,
+89.4,
+87.1,
+84.0,
+85.4,
+85.3,
+85.3,
+84.8
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 80.0,
+"party_cohesion": 91.7,
+"electoral": 85.0,
+"civil_liberties": 80.8
+},
+"d": -0.5,
+"a": "stable"
+},
+"CRI": {
+"n": "Costa Rica",
+"o": [
+92.3,
+92.3,
+92.2,
+92.1,
+92.2,
+92.2,
+92.2,
+90.9,
+92.5,
+92.5,
+92.5
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 90.8,
+"party_cohesion": 80.6,
+"electoral": 95.0,
+"civil_liberties": 90.5
+},
+"d": 0.0,
+"a": "stable"
+},
+"CUB": {
+"n": "Cuba",
+"o": [
+22.6,
+22.7,
+22.7,
+25.0,
+25.0,
+24.7,
+24.5,
+24.6,
+23.3,
+23.3,
+23.3
+],
+"c": {
+"opposition_strength": 0.0,
+"accountability": 12.7,
+"party_cohesion": 75.0,
+"electoral": 30.0,
+"civil_liberties": 9.1
+},
+"d": 0.0,
+"a": "stable"
+},
+"CYP": {
+"n": "Cyprus",
+"o": [
+90.3,
+90.3,
+90.5,
+90.4,
+89.6,
+90.2,
+88.0,
+87.9,
+87.9,
+88.0,
+90.1
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 79.6,
+"party_cohesion": 91.7,
+"electoral": 95.0,
+"civil_liberties": 83.9
+},
+"d": 2.1,
+"a": "positive"
+},
+"CZE": {
+"n": "Czechia",
+"o": [
+92.2,
+92.1,
+87.5,
+87.5,
+86.5,
+87.9,
+88.3,
+91.8,
+93.5,
+93.6,
+93.5
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 85.5,
+"party_cohesion": 100.0,
+"electoral": 95.0,
+"civil_liberties": 89.2
+},
+"d": -0.1,
+"a": "stable"
+},
+"DEU": {
+"n": "Germany",
+"o": [
+99.2,
+99.3,
+99.1,
+99.0,
+99.0,
+99.0,
+97.7,
+97.6,
+97.7,
+97.3,
+98.5
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 95.9,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 89.0
+},
+"d": 1.2,
+"a": "stable"
+},
+"DJI": {
+"n": "Djibouti",
+"o": [
+31.6,
+31.6,
+31.6,
+30.4,
+30.8,
+30.7,
+30.8,
+30.7,
+30.8,
+30.8,
+30.8
+],
+"c": {
+"opposition_strength": 43.8,
+"accountability": 15.8,
+"party_cohesion": 47.2,
+"electoral": 30.0,
+"civil_liberties": 44.4
+},
+"d": 0.0,
+"a": "stable"
+},
+"DNK": {
+"n": "Denmark",
+"o": [
+99.8,
+99.8,
+99.8,
+99.8,
+99.7,
+99.8,
+99.7,
+99.8,
+97.8,
+97.8,
+99.4
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 98.4,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 99.5
+},
+"d": 1.6,
+"a": "stable"
+},
+"DOM": {
+"n": "Dominican Republic",
+"o": [
+60.1,
+61.4,
+61.4,
+61.6,
+61.6,
+65.8,
+66.0,
+66.1,
+64.8,
+68.8,
+68.4
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 44.9,
+"party_cohesion": 66.7,
+"electoral": 85.0,
+"civil_liberties": 85.5
+},
+"d": -0.4,
+"a": "stable"
+},
+"DZA": {
+"n": "Algeria",
+"o": [
+45.5,
+45.3,
+49.8,
+47.3,
+47.2,
+48.1,
+45.8,
+44.0,
+42.5,
+40.0,
+40.0
+],
+"c": {
+"opposition_strength": 62.5,
+"accountability": 25.4,
+"party_cohesion": 38.9,
+"electoral": 40.0,
+"civil_liberties": 24.2
+},
+"d": 0.0,
+"a": "stable"
+},
+"ECU": {
+"n": "Ecuador",
+"o": [
+50.2,
+51.7,
+61.4,
+72.3,
+72.4,
+72.0,
+72.1,
+77.5,
+78.6,
+78.2,
+73.3
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 63.2,
+"party_cohesion": 47.2,
+"electoral": 90.0,
+"civil_liberties": 67.9
+},
+"d": -4.9,
+"a": "warning"
+},
+"EGY": {
+"n": "Egypt",
+"o": [
+37.4,
+27.0,
+26.6,
+25.5,
+25.6,
+27.9,
+28.0,
+30.6,
+31.8,
+31.8,
+32.0
+],
+"c": {
+"opposition_strength": 43.8,
+"accountability": 22.7,
+"party_cohesion": 47.2,
+"electoral": 25.0,
+"civil_liberties": 28.9
+},
+"d": 0.2,
+"a": "stable"
+},
+"ERI": {
+"n": "Eritrea",
+"o": [
+19.4,
+19.2,
+19.4,
+21.5,
+20.4,
+20.6,
+22.9,
+21.7,
+19.3,
+21.9,
+21.0
+],
+"c": {
+"opposition_strength": 0.0,
+"accountability": 11.6,
+"party_cohesion": 11.1,
+"electoral": 60.0,
+"civil_liberties": 2.8
+},
+"d": -0.9,
+"a": "stable"
+},
+"ESP": {
+"n": "Spain",
+"o": [
+90.1,
+90.8,
+90.8,
+90.9,
+94.2,
+93.3,
+93.4,
+90.5,
+90.3,
+90.5,
+90.6
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 82.2,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 87.3
+},
+"d": 0.1,
+"a": "stable"
+},
+"EST": {
+"n": "Estonia",
+"o": [
+95.5,
+95.6,
+95.6,
+97.3,
+95.6,
+97.1,
+97.2,
+97.2,
+97.0,
+97.2,
+96.9
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 91.3,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 96.4
+},
+"d": -0.3,
+"a": "stable"
+},
+"ETH": {
+"n": "Ethiopia",
+"o": [
+31.8,
+33.3,
+33.0,
+38.9,
+44.7,
+44.5,
+40.3,
+39.9,
+39.3,
+34.8,
+37.9
+],
+"c": {
+"opposition_strength": 50.0,
+"accountability": 13.0,
+"party_cohesion": 58.3,
+"electoral": 50.0,
+"civil_liberties": 40.9
+},
+"d": 3.1,
+"a": "positive"
+},
+"FIN": {
+"n": "Finland",
+"o": [
+98.7,
+98.7,
+99.0,
+99.2,
+98.9,
+99.1,
+99.1,
+98.7,
+98.5,
+98.3,
+98.3
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 95.4,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 91.6
+},
+"d": 0.0,
+"a": "stable"
+},
+"FJI": {
+"n": "Fiji",
+"o": [
+66.9,
+68.2,
+68.6,
+67.4,
+65.2,
+65.2,
+65.8,
+66.7,
+77.3,
+77.1,
+76.9
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 76.1,
+"party_cohesion": 91.7,
+"electoral": 65.0,
+"civil_liberties": 79.5
+},
+"d": -0.2,
+"a": "stable"
+},
+"FRA": {
+"n": "France",
+"o": [
+92.8,
+92.8,
+92.8,
+92.6,
+92.7,
+92.5,
+92.5,
+93.2,
+95.0,
+94.9,
+95.0
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 90.7,
+"party_cohesion": 88.9,
+"electoral": 100.0,
+"civil_liberties": 93.9
+},
+"d": 0.1,
+"a": "stable"
+},
+"GAB": {
+"n": "Gabon",
+"o": [
+55.2,
+55.2,
+48.5,
+47.5,
+46.8,
+45.2,
+45.1,
+45.3,
+41.8,
+48.4,
+49.6
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 18.4,
+"party_cohesion": 91.7,
+"electoral": 45.0,
+"civil_liberties": 66.7
+},
+"d": 1.2,
+"a": "stable"
+},
+"GBR": {
+"n": "United Kingdom",
+"o": [
+94.9,
+94.9,
+95.1,
+96.7,
+93.9,
+95.3,
+93.6,
+90.6,
+90.6,
+92.1,
+93.5
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 88.8,
+"party_cohesion": 100.0,
+"electoral": 90.0,
+"civil_liberties": 85.3
+},
+"d": 1.4,
+"a": "stable"
+},
+"GEO": {
+"n": "Georgia",
+"o": [
+80.1,
+78.3,
+79.9,
+81.1,
+79.4,
+77.7,
+78.9,
+79.1,
+80.3,
+73.2,
+65.3
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 61.8,
+"party_cohesion": 91.7,
+"electoral": 45.0,
+"civil_liberties": 61.4
+},
+"d": -7.9,
+"a": "critical"
+},
+"GHA": {
+"n": "Ghana",
+"o": [
+84.6,
+86.1,
+86.1,
+86.0,
+86.1,
+79.4,
+79.3,
+79.4,
+79.3,
+81.8,
+81.8
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 82.2,
+"party_cohesion": 75.0,
+"electoral": 80.0,
+"civil_liberties": 86.2
+},
+"d": 0.0,
+"a": "stable"
+},
+"GIN": {
+"n": "Guinea",
+"o": [
+46.6,
+46.7,
+45.4,
+45.3,
+38.8,
+35.5,
+34.2,
+32.8,
+29.4,
+27.8,
+45.7
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 28.4,
+"party_cohesion": 58.3,
+"electoral": 35.0,
+"civil_liberties": 44.4
+},
+"d": 17.9,
+"a": "positive"
+},
+"GMB": {
+"n": "The Gambia",
+"o": [
+42.7,
+49.2,
+68.5,
+67.3,
+69.5,
+68.0,
+77.0,
+75.9,
+74.9,
+74.7,
+74.8
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 71.4,
+"party_cohesion": 55.6,
+"electoral": 85.0,
+"civil_liberties": 86.8
+},
+"d": 0.1,
+"a": "stable"
+},
+"GNB": {
+"n": "Guinea-Bissau",
+"o": [
+56.4,
+56.4,
+56.3,
+58.4,
+58.5,
+58.7,
+58.6,
+73.8,
+67.8,
+64.6,
+50.0
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 36.0,
+"party_cohesion": 47.2,
+"electoral": 50.0,
+"civil_liberties": 57.6
+},
+"d": -14.6,
+"a": "critical"
+},
+"GNQ": {
+"n": "Equatorial Guinea",
+"o": [
+26.0,
+26.0,
+27.2,
+27.2,
+27.2,
+27.1,
+27.2,
+27.0,
+27.3,
+27.1,
+25.5
+],
+"c": {
+"opposition_strength": 31.2,
+"accountability": 15.2,
+"party_cohesion": 58.3,
+"electoral": 15.0,
+"civil_liberties": 7.0
+},
+"d": -1.6,
+"a": "stable"
+},
+"GRC": {
+"n": "Greece",
+"o": [
+93.0,
+93.0,
+93.0,
+93.0,
+92.6,
+88.2,
+86.1,
+85.2,
+81.7,
+80.0,
+80.4
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 61.5,
+"party_cohesion": 91.7,
+"electoral": 100.0,
+"civil_liberties": 86.5
+},
+"d": 0.4,
+"a": "stable"
+},
+"GTM": {
+"n": "Guatemala",
+"o": [
+75.9,
+75.8,
+74.0,
+71.5,
+70.9,
+70.3,
+69.3,
+62.6,
+61.8,
+76.3,
+76.2
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 76.8,
+"party_cohesion": 47.2,
+"electoral": 70.0,
+"civil_liberties": 86.4
+},
+"d": -0.1,
+"a": "stable"
+},
+"GUY": {
+"n": "Guyana",
+"o": [
+68.6,
+68.7,
+68.8,
+68.0,
+65.0,
+64.4,
+57.7,
+57.9,
+56.1,
+58.6,
+58.6
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 43.9,
+"party_cohesion": 58.3,
+"electoral": 70.0,
+"civil_liberties": 84.2
+},
+"d": 0.0,
+"a": "stable"
+},
+"HKG": {
+"n": "Hong Kong",
+"o": [
+73.4,
+69.3,
+69.2,
+67.6,
+66.0,
+57.3,
+42.7,
+40.8,
+30.7,
+37.0,
+38.2
+],
+"c": {
+"opposition_strength": 37.5,
+"accountability": 30.2,
+"party_cohesion": 63.9,
+"electoral": 35.0,
+"civil_liberties": 40.7
+},
+"d": 1.2,
+"a": "stable"
+},
+"HND": {
+"n": "Honduras",
+"o": [
+52.6,
+52.7,
+47.7,
+49.4,
+49.1,
+49.2,
+54.3,
+62.3,
+61.3,
+58.8,
+58.4
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 42.5,
+"party_cohesion": 63.9,
+"electoral": 50.0,
+"civil_liberties": 83.3
+},
+"d": -0.4,
+"a": "stable"
+},
+"HRV": {
+"n": "Croatia",
+"o": [
+92.0,
+90.5,
+87.4,
+87.1,
+88.7,
+89.0,
+89.0,
+87.3,
+87.2,
+84.7,
+86.3
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 80.6,
+"party_cohesion": 91.7,
+"electoral": 90.0,
+"civil_liberties": 72.9
+},
+"d": 1.6,
+"a": "stable"
+},
+"HTI": {
+"n": "Haiti",
+"o": [
+58.1,
+60.7,
+59.4,
+57.8,
+59.2,
+59.1,
+57.2,
+57.0,
+58.3,
+54.6,
+46.7
+],
+"c": {
+"opposition_strength": 91.7,
+"accountability": 35.2,
+"party_cohesion": 27.8,
+"electoral": 35.0,
+"civil_liberties": 69.1
+},
+"d": -7.9,
+"a": "critical"
+},
+"HUN": {
+"n": "Hungary",
+"o": [
+77.9,
+77.9,
+76.1,
+73.2,
+71.9,
+73.0,
+71.6,
+70.1,
+66.8,
+68.2,
+66.6
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 55.1,
+"party_cohesion": 91.7,
+"electoral": 60.0,
+"civil_liberties": 59.4
+},
+"d": -1.6,
+"a": "stable"
+},
+"IDN": {
+"n": "Indonesia",
+"o": [
+81.3,
+78.0,
+77.8,
+77.6,
+77.6,
+73.7,
+73.6,
+75.0,
+67.1,
+66.1,
+67.2
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 56.7,
+"party_cohesion": 83.3,
+"electoral": 65.0,
+"civil_liberties": 72.2
+},
+"d": 1.1,
+"a": "stable"
+},
+"IND": {
+"n": "India",
+"o": [
+76.5,
+76.4,
+77.7,
+74.3,
+70.9,
+69.3,
+71.2,
+70.6,
+69.1,
+69.0,
+66.0
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 53.9,
+"party_cohesion": 63.9,
+"electoral": 70.0,
+"civil_liberties": 52.9
+},
+"d": -3.0,
+"a": "warning"
+},
+"IRL": {
+"n": "Ireland",
+"o": [
+89.2,
+89.2,
+89.5,
+89.5,
+89.5,
+89.5,
+90.7,
+90.7,
+90.7,
+90.7,
+90.7
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 86.0,
+"party_cohesion": 91.7,
+"electoral": 100.0,
+"civil_liberties": 97.0
+},
+"d": 0.0,
+"a": "stable"
+},
+"IRN": {
+"n": "Iran",
+"o": [
+58.1,
+58.3,
+56.5,
+54.8,
+54.4,
+51.6,
+43.6,
+41.5,
+36.9,
+44.9,
+46.1
+],
+"c": {
+"opposition_strength": 31.2,
+"accountability": 50.4,
+"party_cohesion": 69.4,
+"electoral": 40.0,
+"civil_liberties": 16.2
+},
+"d": 1.2,
+"a": "stable"
+},
+"IRQ": {
+"n": "Iraq",
+"o": [
+64.5,
+64.8,
+64.5,
+63.9,
+63.7,
+63.6,
+61.9,
+55.0,
+61.0,
+61.7,
+62.6
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 66.7,
+"party_cohesion": 47.2,
+"electoral": 60.0,
+"civil_liberties": 50.9
+},
+"d": 0.9,
+"a": "stable"
+},
+"ISL": {
+"n": "Iceland",
+"o": [
+91.9,
+91.9,
+90.7,
+92.0,
+92.5,
+92.8,
+88.9,
+88.9,
+89.0,
+92.3,
+91.9
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 80.8,
+"party_cohesion": 100.0,
+"electoral": 95.0,
+"civil_liberties": 87.2
+},
+"d": -0.4,
+"a": "stable"
+},
+"ISR": {
+"n": "Israel",
+"o": [
+89.9,
+89.8,
+91.3,
+90.1,
+91.2,
+91.3,
+91.4,
+91.4,
+91.4,
+89.1,
+88.9
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 80.9,
+"party_cohesion": 88.9,
+"electoral": 90.0,
+"civil_liberties": 79.4
+},
+"d": -0.2,
+"a": "stable"
+},
+"ITA": {
+"n": "Italy",
+"o": [
+92.4,
+92.5,
+92.5,
+92.4,
+92.4,
+92.3,
+94.0,
+93.8,
+93.5,
+93.2,
+92.4
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 82.5,
+"party_cohesion": 91.7,
+"electoral": 100.0,
+"civil_liberties": 83.0
+},
+"d": -0.8,
+"a": "stable"
+},
+"JAM": {
+"n": "Jamaica",
+"o": [
+87.1,
+87.1,
+89.7,
+89.4,
+89.7,
+91.0,
+89.7,
+89.8,
+86.6,
+86.2,
+89.0
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 81.1,
+"party_cohesion": 91.7,
+"electoral": 100.0,
+"civil_liberties": 89.9
+},
+"d": 2.8,
+"a": "positive"
+},
+"JOR": {
+"n": "Jordan",
+"o": [
+63.6,
+63.8,
+65.1,
+65.6,
+65.6,
+65.5,
+65.7,
+67.2,
+69.3,
+76.0,
+73.3
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 74.1,
+"party_cohesion": 55.6,
+"electoral": 75.0,
+"civil_liberties": 52.9
+},
+"d": -2.7,
+"a": "warning"
+},
+"JPN": {
+"n": "Japan",
+"o": [
+91.8,
+91.8,
+91.8,
+91.9,
+91.9,
+90.0,
+90.0,
+90.0,
+90.0,
+90.0,
+90.0
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 83.8,
+"party_cohesion": 80.6,
+"electoral": 95.0,
+"civil_liberties": 82.9
+},
+"d": 0.0,
+"a": "stable"
+},
+"KAZ": {
+"n": "Kazakhstan",
+"o": [
+38.9,
+40.1,
+39.8,
+39.8,
+38.9,
+39.0,
+40.3,
+41.1,
+42.5,
+42.5,
+48.7
+],
+"c": {
+"opposition_strength": 43.8,
+"accountability": 43.6,
+"party_cohesion": 75.0,
+"electoral": 45.0,
+"civil_liberties": 36.1
+},
+"d": 6.2,
+"a": "positive"
+},
+"KEN": {
+"n": "Kenya",
+"o": [
+83.2,
+83.1,
+81.8,
+81.8,
+80.3,
+80.5,
+82.0,
+85.9,
+83.1,
+78.0,
+73.0
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 81.1,
+"party_cohesion": 63.9,
+"electoral": 65.0,
+"civil_liberties": 76.6
+},
+"d": -5.0,
+"a": "critical"
+},
+"KGZ": {
+"n": "Kyrgyzstan",
+"o": [
+64.7,
+62.5,
+63.7,
+64.4,
+68.3,
+58.7,
+58.6,
+55.0,
+52.1,
+50.4,
+44.8
+],
+"c": {
+"opposition_strength": 56.2,
+"accountability": 45.4,
+"party_cohesion": 8.3,
+"electoral": 55.0,
+"civil_liberties": 43.5
+},
+"d": -5.6,
+"a": "critical"
+},
+"KHM": {
+"n": "Cambodia",
+"o": [
+45.0,
+41.6,
+36.0,
+30.3,
+29.7,
+29.8,
+30.0,
+29.8,
+28.4,
+25.9,
+26.2
+],
+"c": {
+"opposition_strength": 43.8,
+"accountability": 8.8,
+"party_cohesion": 58.3,
+"electoral": 15.0,
+"civil_liberties": 27.7
+},
+"d": 0.3,
+"a": "stable"
+},
+"KOR": {
+"n": "South Korea",
+"o": [
+83.8,
+86.8,
+91.1,
+91.3,
+91.1,
+91.2,
+89.2,
+87.4,
+83.4,
+89.0,
+89.5
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 89.7,
+"party_cohesion": 75.0,
+"electoral": 100.0,
+"civil_liberties": 82.4
+},
+"d": 0.5,
+"a": "stable"
+},
+"KWT": {
+"n": "Kuwait",
+"o": [
+60.6,
+64.9,
+65.1,
+65.0,
+65.0,
+60.5,
+61.0,
+59.8,
+60.0,
+53.8,
+39.1
+],
+"c": {
+"opposition_strength": 12.5,
+"accountability": 55.2,
+"party_cohesion": 8.3,
+"electoral": 70.0,
+"civil_liberties": 53.5
+},
+"d": -14.7,
+"a": "critical"
+},
+"LAO": {
+"n": "Laos",
+"o": [
+26.4,
+27.7,
+27.8,
+29.3,
+37.2,
+26.5,
+31.9,
+34.3,
+33.7,
+34.1,
+31.9
+],
+"c": {
+"opposition_strength": 6.2,
+"accountability": 28.8,
+"party_cohesion": 83.3,
+"electoral": 30.0,
+"civil_liberties": 17.7
+},
+"d": -2.2,
+"a": "warning"
+},
+"LBN": {
+"n": "Lebanon",
+"o": [
+55.5,
+55.6,
+56.7,
+55.6,
+55.8,
+55.9,
+53.9,
+52.2,
+55.6,
+50.9,
+59.1
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 57.9,
+"party_cohesion": 50.0,
+"electoral": 45.0,
+"civil_liberties": 74.3
+},
+"d": 8.2,
+"a": "positive"
+},
+"LBR": {
+"n": "Liberia",
+"o": [
+76.4,
+76.4,
+70.4,
+66.0,
+65.9,
+64.1,
+63.8,
+63.8,
+64.4,
+57.8,
+65.0
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 69.8,
+"party_cohesion": 47.2,
+"electoral": 65.0,
+"civil_liberties": 81.0
+},
+"d": 7.2,
+"a": "positive"
+},
+"LBY": {
+"n": "Libya",
+"o": [
+70.3,
+70.3,
+69.4,
+66.3,
+66.2,
+64.5,
+64.1,
+58.1,
+54.9,
+55.6,
+49.0
+],
+"c": {
+"opposition_strength": 56.2,
+"accountability": 41.9,
+"party_cohesion": 27.8,
+"electoral": 65.0,
+"civil_liberties": 60.1
+},
+"d": -6.6,
+"a": "critical"
+},
+"LKA": {
+"n": "Sri Lanka",
+"o": [
+73.4,
+72.5,
+74.2,
+76.2,
+79.3,
+74.3,
+74.6,
+75.6,
+72.9,
+75.6,
+79.5
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 61.8,
+"party_cohesion": 91.7,
+"electoral": 90.0,
+"civil_liberties": 86.0
+},
+"d": 3.9,
+"a": "positive"
+},
+"LSO": {
+"n": "Lesotho",
+"o": [
+70.1,
+70.0,
+70.2,
+71.7,
+84.4,
+78.6,
+76.6,
+76.3,
+77.4,
+76.1,
+75.4
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 58.6,
+"party_cohesion": 80.6,
+"electoral": 85.0,
+"civil_liberties": 81.3
+},
+"d": -0.7,
+"a": "stable"
+},
+"LTU": {
+"n": "Lithuania",
+"o": [
+91.8,
+92.0,
+91.8,
+91.5,
+91.7,
+92.7,
+92.8,
+92.8,
+89.7,
+91.4,
+86.3
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 88.9,
+"party_cohesion": 80.6,
+"electoral": 85.0,
+"civil_liberties": 87.7
+},
+"d": -5.1,
+"a": "critical"
+},
+"LUX": {
+"n": "Luxembourg",
+"o": [
+94.7,
+94.7,
+94.7,
+94.7,
+94.7,
+94.6,
+94.6,
+94.6,
+94.6,
+94.3,
+94.1
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 83.7,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 94.7
+},
+"d": -0.2,
+"a": "stable"
+},
+"LVA": {
+"n": "Latvia",
+"o": [
+92.5,
+92.4,
+92.3,
+91.1,
+93.7,
+92.4,
+89.0,
+89.1,
+91.1,
+88.6,
+88.2
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 82.4,
+"party_cohesion": 91.7,
+"electoral": 95.0,
+"civil_liberties": 87.9
+},
+"d": -0.4,
+"a": "stable"
+},
+"MAR": {
+"n": "Morocco",
+"o": [
+66.6,
+68.2,
+68.0,
+68.1,
+67.9,
+67.6,
+70.4,
+70.5,
+70.5,
+70.6,
+70.6
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 73.6,
+"party_cohesion": 63.9,
+"electoral": 60.0,
+"civil_liberties": 63.2
+},
+"d": 0.0,
+"a": "stable"
+},
+"MDA": {
+"n": "Moldova",
+"o": [
+76.6,
+75.9,
+76.0,
+75.8,
+77.7,
+81.6,
+87.4,
+90.8,
+87.2,
+76.4,
+80.3
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 71.0,
+"party_cohesion": 91.7,
+"electoral": 80.0,
+"civil_liberties": 68.0
+},
+"d": 3.9,
+"a": "positive"
+},
+"MDG": {
+"n": "Madagascar",
+"o": [
+52.4,
+52.4,
+52.5,
+56.2,
+59.4,
+59.1,
+57.3,
+57.3,
+52.9,
+52.9,
+56.2
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 54.9,
+"party_cohesion": 52.8,
+"electoral": 30.0,
+"civil_liberties": 62.4
+},
+"d": 3.3,
+"a": "positive"
+},
+"MDV": {
+"n": "Maldives",
+"o": [
+65.9,
+57.8,
+64.1,
+65.1,
+77.5,
+76.1,
+74.3,
+75.9,
+77.4,
+75.9,
+75.9
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 66.9,
+"party_cohesion": 80.6,
+"electoral": 75.0,
+"civil_liberties": 68.9
+},
+"d": 0.0,
+"a": "stable"
+},
+"MEX": {
+"n": "Mexico",
+"o": [
+74.7,
+76.4,
+76.8,
+77.4,
+74.4,
+74.4,
+76.1,
+72.5,
+69.2,
+62.7,
+63.1
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 46.0,
+"party_cohesion": 91.7,
+"electoral": 65.0,
+"civil_liberties": 58.0
+},
+"d": 0.4,
+"a": "stable"
+},
+"MKD": {
+"n": "North Macedonia",
+"o": [
+69.4,
+71.1,
+76.7,
+74.7,
+74.7,
+69.3,
+67.9,
+67.8,
+67.5,
+70.3,
+68.7
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 64.5,
+"party_cohesion": 58.3,
+"electoral": 75.0,
+"civil_liberties": 66.6
+},
+"d": -1.6,
+"a": "stable"
+},
+"MLI": {
+"n": "Mali",
+"o": [
+62.7,
+62.7,
+60.7,
+60.2,
+60.7,
+56.2,
+46.1,
+47.0,
+44.6,
+40.8,
+36.6
+],
+"c": {
+"opposition_strength": 37.5,
+"accountability": 15.2,
+"party_cohesion": 63.9,
+"electoral": 50.0,
+"civil_liberties": 61.3
+},
+"d": -4.2,
+"a": "warning"
+},
+"MLT": {
+"n": "Malta",
+"o": [
+81.3,
+81.2,
+79.5,
+79.4,
+81.5,
+82.5,
+82.6,
+82.5,
+82.5,
+82.3,
+82.4
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 66.3,
+"party_cohesion": 91.7,
+"electoral": 95.0,
+"civil_liberties": 83.8
+},
+"d": 0.1,
+"a": "stable"
+},
+"MMR": {
+"n": "Burma/Myanmar",
+"o": [
+58.5,
+62.0,
+62.1,
+61.1,
+61.6,
+65.4,
+44.9,
+45.3,
+38.8,
+36.4,
+25.1
+],
+"c": {
+"opposition_strength": 33.3,
+"accountability": 14.7,
+"party_cohesion": 47.2,
+"electoral": 10.0,
+"civil_liberties": 9.7
+},
+"d": -11.3,
+"a": "critical"
+},
+"MNE": {
+"n": "Montenegro",
+"o": [
+68.2,
+66.8,
+66.7,
+65.5,
+65.5,
+71.7,
+72.4,
+72.1,
+77.7,
+76.2,
+76.4
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 74.1,
+"party_cohesion": 75.0,
+"electoral": 70.0,
+"civil_liberties": 83.3
+},
+"d": 0.2,
+"a": "stable"
+},
+"MNG": {
+"n": "Mongolia",
+"o": [
+80.9,
+79.7,
+79.4,
+79.3,
+79.9,
+79.9,
+78.9,
+75.6,
+71.7,
+66.8,
+70.0
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 79.8,
+"party_cohesion": 47.2,
+"electoral": 65.0,
+"civil_liberties": 72.8
+},
+"d": 3.2,
+"a": "positive"
+},
+"MOZ": {
+"n": "Mozambique",
+"o": [
+61.7,
+60.0,
+60.2,
+60.1,
+58.9,
+52.6,
+55.7,
+55.7,
+52.4,
+47.5,
+46.5
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 41.7,
+"party_cohesion": 75.0,
+"electoral": 15.0,
+"civil_liberties": 51.0
+},
+"d": -1.0,
+"a": "stable"
+},
+"MRT": {
+"n": "Mauritania",
+"o": [
+38.4,
+38.4,
+45.0,
+49.0,
+51.4,
+56.7,
+56.5,
+58.0,
+53.3,
+50.1,
+47.5
+],
+"c": {
+"opposition_strength": 56.2,
+"accountability": 42.2,
+"party_cohesion": 58.3,
+"electoral": 40.0,
+"civil_liberties": 54.8
+},
+"d": -2.6,
+"a": "warning"
+},
+"MUS": {
+"n": "Mauritius",
+"o": [
+91.1,
+91.0,
+90.8,
+90.9,
+79.8,
+78.2,
+77.9,
+77.0,
+76.8,
+81.4,
+91.9
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 89.0,
+"party_cohesion": 88.9,
+"electoral": 90.0,
+"civil_liberties": 91.0
+},
+"d": 10.5,
+"a": "positive"
+},
+"MWI": {
+"n": "Malawi",
+"o": [
+71.4,
+71.7,
+73.2,
+70.4,
+69.5,
+73.8,
+75.4,
+77.0,
+69.5,
+73.0,
+72.8
+],
+"c": {
+"opposition_strength": 93.8,
+"accountability": 81.8,
+"party_cohesion": 38.9,
+"electoral": 60.0,
+"civil_liberties": 75.0
+},
+"d": -0.2,
+"a": "stable"
+},
+"MYS": {
+"n": "Malaysia",
+"o": [
+58.2,
+58.2,
+58.2,
+68.8,
+70.4,
+65.0,
+64.6,
+67.6,
+71.2,
+72.4,
+72.2
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 55.6,
+"party_cohesion": 91.7,
+"electoral": 70.0,
+"civil_liberties": 64.3
+},
+"d": -0.2,
+"a": "stable"
+},
+"NAM": {
+"n": "Namibia",
+"o": [
+81.2,
+81.2,
+80.9,
+79.8,
+74.5,
+76.4,
+73.1,
+72.7,
+72.8,
+74.9,
+76.7
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 74.7,
+"party_cohesion": 91.7,
+"electoral": 60.0,
+"civil_liberties": 80.6
+},
+"d": 1.8,
+"a": "stable"
+},
+"NER": {
+"n": "Niger",
+"o": [
+76.6,
+78.5,
+76.2,
+76.1,
+77.9,
+82.6,
+67.7,
+62.4,
+62.6,
+67.0,
+52.3
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 30.3,
+"party_cohesion": 72.2,
+"electoral": 50.0,
+"civil_liberties": 75.0
+},
+"d": -14.7,
+"a": "critical"
+},
+"NGA": {
+"n": "Nigeria",
+"o": [
+73.1,
+73.0,
+74.3,
+74.1,
+71.0,
+70.9,
+64.8,
+65.8,
+66.2,
+62.7,
+64.3
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 58.9,
+"party_cohesion": 63.9,
+"electoral": 50.0,
+"civil_liberties": 70.1
+},
+"d": 1.6,
+"a": "stable"
+},
+"NIC": {
+"n": "Nicaragua",
+"o": [
+38.6,
+38.5,
+38.4,
+34.2,
+34.1,
+31.5,
+25.6,
+21.0,
+20.5,
+17.3,
+17.3
+],
+"c": {
+"opposition_strength": 12.5,
+"accountability": 1.5,
+"party_cohesion": 50.0,
+"electoral": 25.0,
+"civil_liberties": 4.1
+},
+"d": 0.0,
+"a": "stable"
+},
+"NLD": {
+"n": "Netherlands",
+"o": [
+98.5,
+98.5,
+98.5,
+98.7,
+98.2,
+96.6,
+95.4,
+97.0,
+98.1,
+96.1,
+96.2
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 89.3,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 79.9
+},
+"d": 0.1,
+"a": "stable"
+},
+"NOR": {
+"n": "Norway",
+"o": [
+99.2,
+97.8,
+97.7,
+97.6,
+99.0,
+98.9,
+99.0,
+98.9,
+98.9,
+99.3,
+99.3
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 98.1,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 97.0
+},
+"d": 0.0,
+"a": "stable"
+},
+"NPL": {
+"n": "Nepal",
+"o": [
+89.1,
+89.5,
+88.2,
+82.9,
+82.5,
+82.7,
+82.9,
+83.5,
+82.7,
+83.0,
+83.0
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 78.5,
+"party_cohesion": 91.7,
+"electoral": 80.0,
+"civil_liberties": 75.3
+},
+"d": 0.0,
+"a": "stable"
+},
+"NZL": {
+"n": "New Zealand",
+"o": [
+94.9,
+94.9,
+94.9,
+94.9,
+94.9,
+94.9,
+94.9,
+94.8,
+94.8,
+94.7,
+90.2
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 84.6,
+"party_cohesion": 100.0,
+"electoral": 95.0,
+"civil_liberties": 91.0
+},
+"d": -4.5,
+"a": "warning"
+},
+"OMN": {
+"n": "Oman",
+"o": [
+32.9,
+32.9,
+32.9,
+32.9,
+31.7,
+31.4,
+31.8,
+30.6,
+30.6,
+30.7,
+30.7
+],
+"c": {
+"opposition_strength": 0.0,
+"accountability": 26.7,
+"party_cohesion": 25.0,
+"electoral": 65.0,
+"civil_liberties": 29.3
+},
+"d": 0.0,
+"a": "stable"
+},
+"PAK": {
+"n": "Pakistan",
+"o": [
+63.5,
+63.4,
+63.3,
+65.5,
+65.4,
+61.4,
+62.6,
+60.2,
+54.2,
+52.3,
+47.3
+],
+"c": {
+"opposition_strength": 50.0,
+"accountability": 54.0,
+"party_cohesion": 47.2,
+"electoral": 35.0,
+"civil_liberties": 60.1
+},
+"d": -5.0,
+"a": "critical"
+},
+"PAN": {
+"n": "Panama",
+"o": [
+79.0,
+79.0,
+79.1,
+79.1,
+79.0,
+79.0,
+79.0,
+81.1,
+81.2,
+81.7,
+83.4
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 79.6,
+"party_cohesion": 75.0,
+"electoral": 90.0,
+"civil_liberties": 80.1
+},
+"d": 1.7,
+"a": "stable"
+},
+"PER": {
+"n": "Peru",
+"o": [
+83.9,
+83.2,
+84.9,
+86.8,
+84.2,
+83.9,
+85.7,
+79.3,
+70.8,
+68.3,
+72.9
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 76.9,
+"party_cohesion": 19.4,
+"electoral": 85.0,
+"civil_liberties": 73.6
+},
+"d": 4.6,
+"a": "positive"
+},
+"PHL": {
+"n": "Philippines",
+"o": [
+68.0,
+63.4,
+61.4,
+58.2,
+56.8,
+58.0,
+58.4,
+56.0,
+60.9,
+63.3,
+62.0
+],
+"c": {
+"opposition_strength": 93.8,
+"accountability": 70.4,
+"party_cohesion": 27.8,
+"electoral": 40.0,
+"civil_liberties": 68.7
+},
+"d": -1.3,
+"a": "stable"
+},
+"PNG": {
+"n": "Papua New Guinea",
+"o": [
+64.5,
+64.5,
+64.2,
+64.4,
+62.7,
+63.0,
+62.9,
+66.8,
+67.0,
+67.5,
+67.5
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 79.5,
+"party_cohesion": 36.1,
+"electoral": 50.0,
+"civil_liberties": 77.5
+},
+"d": 0.0,
+"a": "stable"
+},
+"POL": {
+"n": "Poland",
+"o": [
+92.4,
+85.9,
+84.4,
+84.3,
+80.4,
+80.1,
+80.0,
+78.7,
+84.2,
+89.0,
+89.2
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 83.8,
+"party_cohesion": 91.7,
+"electoral": 85.0,
+"civil_liberties": 84.1
+},
+"d": 0.2,
+"a": "stable"
+},
+"PRK": {
+"n": "North Korea",
+"o": [
+22.2,
+22.2,
+22.2,
+22.2,
+22.2,
+22.3,
+22.3,
+22.3,
+22.3,
+22.4,
+22.3
+],
+"c": {
+"opposition_strength": 6.2,
+"accountability": 12.8,
+"party_cohesion": 75.0,
+"electoral": 20.0,
+"civil_liberties": 0.4
+},
+"d": -0.1,
+"a": "stable"
+},
+"PRT": {
+"n": "Portugal",
+"o": [
+94.9,
+94.8,
+95.1,
+95.2,
+91.5,
+94.6,
+96.5,
+90.9,
+90.5,
+94.3,
+95.9
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 88.5,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 88.8
+},
+"d": 1.6,
+"a": "stable"
+},
+"PRY": {
+"n": "Paraguay",
+"o": [
+72.4,
+72.6,
+72.7,
+71.4,
+71.6,
+70.7,
+70.4,
+70.4,
+69.9,
+63.6,
+63.5
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 56.4,
+"party_cohesion": 52.8,
+"electoral": 75.0,
+"civil_liberties": 71.3
+},
+"d": -0.1,
+"a": "stable"
+},
+"PSE": {
+"n": "Palestine/West Bank",
+"o": [
+63.2,
+63.2,
+64.0,
+64.3,
+64.7,
+61.9,
+57.4,
+59.0,
+58.8,
+59.0,
+58.9
+],
+"c": {
+"opposition_strength": 83.3,
+"accountability": 30.4,
+"party_cohesion": 75.0,
+"electoral": 70.0,
+"civil_liberties": 42.3
+},
+"d": -0.1,
+"a": "stable"
+},
+"PSG": {
+"n": "Palestine/Gaza",
+"o": [
+56.4,
+56.5,
+56.3,
+55.9,
+56.1,
+56.3,
+56.3,
+54.9,
+55.4,
+47.8,
+53.5
+],
+"c": {
+"opposition_strength": 83.3,
+"accountability": 19.2,
+"party_cohesion": 66.7,
+"electoral": 70.0,
+"civil_liberties": 40.2
+},
+"d": 5.7,
+"a": "positive"
+},
+"QAT": {
+"n": "Qatar",
+"o": [
+19.4,
+19.4,
+19.4,
+19.4,
+19.3,
+19.2,
+20.3,
+20.3,
+20.3,
+20.8,
+18.4
+],
+"c": {
+"opposition_strength": 8.3,
+"accountability": 9.5,
+"party_cohesion": 11.1,
+"electoral": 45.0,
+"civil_liberties": 24.4
+},
+"d": -2.4,
+"a": "warning"
+},
+"ROU": {
+"n": "Romania",
+"o": [
+81.8,
+83.2,
+79.3,
+78.8,
+82.5,
+87.4,
+85.1,
+82.6,
+76.3,
+70.7,
+76.1
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 66.2,
+"party_cohesion": 91.7,
+"electoral": 70.0,
+"civil_liberties": 75.7
+},
+"d": 5.4,
+"a": "positive"
+},
+"RUS": {
+"n": "Russia",
+"o": [
+45.0,
+44.9,
+45.3,
+45.3,
+45.1,
+43.7,
+39.6,
+32.8,
+29.2,
+26.3,
+25.1
+],
+"c": {
+"opposition_strength": 37.5,
+"accountability": 7.7,
+"party_cohesion": 47.2,
+"electoral": 25.0,
+"civil_liberties": 5.1
+},
+"d": -1.2,
+"a": "stable"
+},
+"RWA": {
+"n": "Rwanda",
+"o": [
+48.5,
+50.0,
+50.0,
+49.9,
+49.8,
+50.0,
+50.1,
+49.9,
+46.8,
+44.9,
+44.8
+],
+"c": {
+"opposition_strength": 31.2,
+"accountability": 45.8,
+"party_cohesion": 80.6,
+"electoral": 35.0,
+"civil_liberties": 31.0
+},
+"d": -0.1,
+"a": "stable"
+},
+"SAU": {
+"n": "Saudi Arabia",
+"o": [
+14.4,
+14.0,
+13.9,
+13.8,
+13.8,
+13.9,
+13.9,
+13.5,
+13.9,
+13.6,
+14.0
+],
+"c": {
+"opposition_strength": 0.0,
+"accountability": 9.1,
+"party_cohesion": 36.1,
+"electoral": 20.0,
+"civil_liberties": 21.5
+},
+"d": 0.4,
+"a": "stable"
+},
+"SDN": {
+"n": "Sudan",
+"o": [
+37.7,
+37.7,
+38.1,
+37.6,
+37.3,
+42.4,
+41.9,
+40.5,
+46.6,
+47.5,
+44.8
+],
+"c": {
+"opposition_strength": 66.7,
+"accountability": 33.0,
+"party_cohesion": 44.4,
+"electoral": 25.0,
+"civil_liberties": 27.6
+},
+"d": -2.7,
+"a": "warning"
+},
+"SEN": {
+"n": "Senegal",
+"o": [
+83.8,
+83.8,
+83.5,
+85.0,
+83.8,
+81.6,
+81.5,
+79.1,
+78.9,
+76.8,
+79.4
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 72.6,
+"party_cohesion": 91.7,
+"electoral": 80.0,
+"civil_liberties": 75.3
+},
+"d": 2.6,
+"a": "positive"
+},
+"SGP": {
+"n": "Singapore",
+"o": [
+61.6,
+61.6,
+66.4,
+66.4,
+66.4,
+63.9,
+64.0,
+63.9,
+66.5,
+66.6,
+66.6
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 49.0,
+"party_cohesion": 91.7,
+"electoral": 75.0,
+"civil_liberties": 51.7
+},
+"d": 0.0,
+"a": "stable"
+},
+"SLB": {
+"n": "Solomon Islands",
+"o": [
+67.9,
+68.2,
+68.2,
+68.3,
+70.9,
+70.0,
+70.2,
+70.2,
+70.5,
+74.2,
+74.2
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 66.8,
+"party_cohesion": 52.8,
+"electoral": 85.0,
+"civil_liberties": 81.0
+},
+"d": 0.0,
+"a": "stable"
+},
+"SLE": {
+"n": "Sierra Leone",
+"o": [
+65.2,
+65.2,
+67.2,
+68.7,
+70.7,
+70.8,
+72.9,
+72.8,
+68.4,
+68.2,
+65.9
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 65.6,
+"party_cohesion": 58.3,
+"electoral": 50.0,
+"civil_liberties": 83.3
+},
+"d": -2.3,
+"a": "warning"
+},
+"SLV": {
+"n": "El Salvador",
+"o": [
+80.3,
+80.4,
+80.5,
+77.3,
+76.9,
+76.0,
+60.1,
+46.6,
+44.8,
+38.9,
+38.6
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 9.4,
+"party_cohesion": 66.7,
+"electoral": 35.0,
+"civil_liberties": 33.6
+},
+"d": -0.3,
+"a": "stable"
+},
+"SML": {
+"n": "Somaliland",
+"o": [
+69.9,
+68.8,
+67.5,
+65.1,
+65.1,
+66.4,
+69.2,
+67.7,
+67.9,
+72.5,
+71.5
+],
+"c": {
+"opposition_strength": 93.8,
+"accountability": 64.4,
+"party_cohesion": 55.6,
+"electoral": 70.0,
+"civil_liberties": 55.8
+},
+"d": -1.0,
+"a": "stable"
+},
+"SOM": {
+"n": "Somalia",
+"o": [
+56.6,
+56.4,
+56.5,
+49.8,
+51.6,
+53.5,
+55.1,
+55.4,
+58.8,
+51.9,
+51.9
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 61.8,
+"party_cohesion": 19.4,
+"electoral": 35.0,
+"civil_liberties": 48.1
+},
+"d": 0.0,
+"a": "stable"
+},
+"SRB": {
+"n": "Serbia",
+"o": [
+68.6,
+66.6,
+66.2,
+65.9,
+62.4,
+60.4,
+57.3,
+61.4,
+58.0,
+49.3,
+51.4
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 33.8,
+"party_cohesion": 75.0,
+"electoral": 40.0,
+"civil_liberties": 45.6
+},
+"d": 2.1,
+"a": "positive"
+},
+"SSD": {
+"n": "South Sudan",
+"o": [
+39.9,
+34.2,
+38.0,
+36.1,
+33.2,
+38.1,
+36.6,
+37.9,
+45.2,
+40.7,
+32.2
+],
+"c": {
+"opposition_strength": 37.5,
+"accountability": 18.3,
+"party_cohesion": 11.1,
+"electoral": 60.0,
+"civil_liberties": 16.4
+},
+"d": -8.5,
+"a": "critical"
+},
+"STP": {
+"n": "Sao Tome and Principe",
+"o": [
+80.9,
+80.9,
+80.8,
+80.5,
+80.8,
+81.4,
+81.4,
+81.4,
+81.2,
+77.5,
+77.5
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 78.8,
+"party_cohesion": 63.9,
+"electoral": 80.0,
+"civil_liberties": 80.6
+},
+"d": 0.0,
+"a": "stable"
+},
+"SUR": {
+"n": "Suriname",
+"o": [
+89.4,
+87.6,
+87.8,
+87.2,
+80.0,
+83.0,
+83.1,
+83.2,
+82.0,
+76.0,
+72.6
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 61.4,
+"party_cohesion": 75.0,
+"electoral": 85.0,
+"civil_liberties": 90.0
+},
+"d": -3.4,
+"a": "warning"
+},
+"SVK": {
+"n": "Slovakia",
+"o": [
+90.4,
+90.4,
+87.3,
+87.3,
+88.0,
+92.7,
+92.7,
+92.7,
+91.0,
+79.8,
+81.3
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 64.5,
+"party_cohesion": 80.6,
+"electoral": 100.0,
+"civil_liberties": 77.3
+},
+"d": 1.5,
+"a": "stable"
+},
+"SVN": {
+"n": "Slovenia",
+"o": [
+93.8,
+93.8,
+92.3,
+92.1,
+91.9,
+89.6,
+87.3,
+91.1,
+91.0,
+91.0,
+87.6
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 80.8,
+"party_cohesion": 91.7,
+"electoral": 95.0,
+"civil_liberties": 75.2
+},
+"d": -3.4,
+"a": "warning"
+},
+"SWE": {
+"n": "Sweden",
+"o": [
+99.3,
+99.3,
+99.3,
+98.1,
+98.3,
+98.3,
+98.3,
+99.4,
+99.3,
+99.3,
+99.4
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 98.2,
+"party_cohesion": 100.0,
+"electoral": 100.0,
+"civil_liberties": 96.7
+},
+"d": 0.1,
+"a": "stable"
+},
+"SWZ": {
+"n": "Eswatini",
+"o": [
+32.5,
+32.6,
+32.5,
+36.2,
+36.3,
+36.2,
+31.8,
+31.9,
+34.5,
+34.5,
+34.4
+],
+"c": {
+"opposition_strength": 0.0,
+"accountability": 47.6,
+"party_cohesion": 19.4,
+"electoral": 50.0,
+"civil_liberties": 19.6
+},
+"d": -0.1,
+"a": "stable"
+},
+"SYC": {
+"n": "Seychelles",
+"o": [
+80.5,
+82.9,
+86.4,
+86.6,
+86.7,
+88.7,
+88.9,
+89.7,
+88.6,
+88.7,
+89.0
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 81.3,
+"party_cohesion": 91.7,
+"electoral": 100.0,
+"civil_liberties": 90.3
+},
+"d": 0.3,
+"a": "stable"
+},
+"SYR": {
+"n": "Syria",
+"o": [
+12.2,
+12.3,
+12.3,
+11.1,
+9.6,
+11.7,
+13.0,
+12.8,
+14.1,
+18.1,
+32.2
+],
+"c": {
+"opposition_strength": 50.0,
+"accountability": 31.4,
+"party_cohesion": 27.8,
+"electoral": 10.0,
+"civil_liberties": 31.3
+},
+"d": 14.1,
+"a": "positive"
+},
+"TCD": {
+"n": "Chad",
+"o": [
+37.1,
+37.0,
+39.1,
+38.4,
+39.2,
+39.3,
+32.9,
+27.3,
+28.1,
+32.5,
+32.5
+],
+"c": {
+"opposition_strength": 56.2,
+"accountability": 12.2,
+"party_cohesion": 63.9,
+"electoral": 20.0,
+"civil_liberties": 28.5
+},
+"d": 0.0,
+"a": "stable"
+},
+"TGO": {
+"n": "Togo",
+"o": [
+64.8,
+63.7,
+63.2,
+57.8,
+57.6,
+59.8,
+57.4,
+57.4,
+56.2,
+52.3,
+46.4
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 16.8,
+"party_cohesion": 63.9,
+"electoral": 45.0,
+"civil_liberties": 43.9
+},
+"d": -5.9,
+"a": "critical"
+},
+"THA": {
+"n": "Thailand",
+"o": [
+32.7,
+31.2,
+29.5,
+33.0,
+60.2,
+63.4,
+63.0,
+63.5,
+72.6,
+71.8,
+75.2
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 78.8,
+"party_cohesion": 80.6,
+"electoral": 55.0,
+"civil_liberties": 59.3
+},
+"d": 3.4,
+"a": "positive"
+},
+"TJK": {
+"n": "Tajikistan",
+"o": [
+26.9,
+23.9,
+23.8,
+24.0,
+23.8,
+24.7,
+26.0,
+25.2,
+27.7,
+25.5,
+28.5
+],
+"c": {
+"opposition_strength": 31.2,
+"accountability": 13.3,
+"party_cohesion": 75.0,
+"electoral": 20.0,
+"civil_liberties": 10.2
+},
+"d": 3.0,
+"a": "positive"
+},
+"TKM": {
+"n": "Turkmenistan",
+"o": [
+19.1,
+19.1,
+19.4,
+20.5,
+21.4,
+21.4,
+21.4,
+18.8,
+18.9,
+18.9,
+17.4
+],
+"c": {
+"opposition_strength": 6.2,
+"accountability": 6.0,
+"party_cohesion": 66.7,
+"electoral": 15.0,
+"civil_liberties": 5.7
+},
+"d": -1.5,
+"a": "stable"
+},
+"TLS": {
+"n": "Timor-Leste",
+"o": [
+79.8,
+79.7,
+75.8,
+72.2,
+78.5,
+75.8,
+75.4,
+77.9,
+78.0,
+79.9,
+77.5
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 67.3,
+"party_cohesion": 75.0,
+"electoral": 90.0,
+"civil_liberties": 78.8
+},
+"d": -2.4,
+"a": "warning"
+},
+"TTO": {
+"n": "Trinidad and Tobago",
+"o": [
+89.1,
+89.1,
+88.0,
+86.6,
+89.8,
+86.8,
+86.9,
+86.8,
+86.8,
+86.8,
+86.7
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 81.9,
+"party_cohesion": 91.7,
+"electoral": 90.0,
+"civil_liberties": 86.3
+},
+"d": -0.1,
+"a": "stable"
+},
+"TUN": {
+"n": "Tunisia",
+"o": [
+93.7,
+92.0,
+93.6,
+93.6,
+93.5,
+93.8,
+88.7,
+73.0,
+65.8,
+60.2,
+56.9
+],
+"c": {
+"opposition_strength": 62.5,
+"accountability": 55.0,
+"party_cohesion": 63.9,
+"electoral": 50.0,
+"civil_liberties": 60.8
+},
+"d": -3.3,
+"a": "warning"
+},
+"TUR": {
+"n": "Türkiye",
+"o": [
+66.1,
+59.9,
+49.4,
+47.0,
+47.5,
+53.9,
+53.9,
+53.6,
+54.4,
+48.3,
+48.2
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 11.1,
+"party_cohesion": 83.3,
+"electoral": 55.0,
+"civil_liberties": 33.2
+},
+"d": -0.1,
+"a": "stable"
+},
+"TWN": {
+"n": "Taiwan",
+"o": [
+84.3,
+86.1,
+87.1,
+87.3,
+88.7,
+91.9,
+88.9,
+88.1,
+87.9,
+86.7,
+93.1
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 87.9,
+"party_cohesion": 91.7,
+"electoral": 95.0,
+"civil_liberties": 86.1
+},
+"d": 6.4,
+"a": "positive"
+},
+"TZA": {
+"n": "Tanzania",
+"o": [
+82.0,
+73.9,
+76.3,
+74.7,
+74.2,
+73.1,
+70.7,
+70.8,
+72.3,
+72.8,
+66.7
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 69.4,
+"party_cohesion": 75.0,
+"electoral": 50.0,
+"civil_liberties": 60.8
+},
+"d": -6.1,
+"a": "critical"
+},
+"UGA": {
+"n": "Uganda",
+"o": [
+61.5,
+58.4,
+57.9,
+56.5,
+56.3,
+56.5,
+55.8,
+53.5,
+53.4,
+51.7,
+52.1
+],
+"c": {
+"opposition_strength": 75.0,
+"accountability": 65.9,
+"party_cohesion": 36.1,
+"electoral": 20.0,
+"civil_liberties": 44.0
+},
+"d": 0.4,
+"a": "stable"
+},
+"UKR": {
+"n": "Ukraine",
+"o": [
+61.6,
+63.1,
+62.9,
+62.9,
+71.6,
+67.5,
+68.5,
+70.2,
+69.9,
+64.0,
+64.3
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 50.5,
+"party_cohesion": 80.6,
+"electoral": 70.0,
+"civil_liberties": 48.4
+},
+"d": 0.3,
+"a": "stable"
+},
+"URY": {
+"n": "Uruguay",
+"o": [
+93.7,
+93.7,
+93.6,
+93.7,
+94.9,
+92.3,
+92.1,
+92.9,
+92.5,
+92.7,
+93.1
+],
+"c": {
+"opposition_strength": 100.0,
+"accountability": 84.4,
+"party_cohesion": 91.7,
+"electoral": 100.0,
+"civil_liberties": 92.8
+},
+"d": 0.4,
+"a": "stable"
+},
+"USA": {
+"n": "United States of America",
+"o": [
+95.7,
+94.3,
+88.4,
+88.2,
+90.0,
+87.4,
+91.4,
+93.9,
+94.8,
+89.5,
+81.8
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 65.8,
+"party_cohesion": 88.9,
+"electoral": 95.0,
+"civil_liberties": 83.2
+},
+"d": -7.7,
+"a": "critical"
+},
+"UZB": {
+"n": "Uzbekistan",
+"o": [
+22.8,
+22.9,
+25.2,
+24.6,
+30.0,
+32.4,
+30.1,
+29.9,
+29.7,
+29.6,
+30.1
+],
+"c": {
+"opposition_strength": 25.0,
+"accountability": 11.4,
+"party_cohesion": 75.0,
+"electoral": 35.0,
+"civil_liberties": 25.3
+},
+"d": 0.5,
+"a": "stable"
+},
+"VEN": {
+"n": "Venezuela",
+"o": [
+42.3,
+45.4,
+38.7,
+35.9,
+34.3,
+30.2,
+30.5,
+28.9,
+26.3,
+28.4,
+28.0
+],
+"c": {
+"opposition_strength": 43.8,
+"accountability": 6.9,
+"party_cohesion": 66.7,
+"electoral": 20.0,
+"civil_liberties": 20.3
+},
+"d": -0.4,
+"a": "stable"
+},
+"VNM": {
+"n": "Vietnam",
+"o": [
+45.7,
+45.8,
+46.1,
+46.0,
+44.0,
+41.6,
+48.3,
+51.0,
+50.0,
+50.3,
+48.9
+],
+"c": {
+"opposition_strength": 0.0,
+"accountability": 53.6,
+"party_cohesion": 91.7,
+"electoral": 55.0,
+"civil_liberties": 25.7
+},
+"d": -1.4,
+"a": "stable"
+},
+"VUT": {
+"n": "Vanuatu",
+"o": [
+80.0,
+80.0,
+84.3,
+81.3,
+79.5,
+80.5,
+79.5,
+79.5,
+79.9,
+79.7,
+79.7
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 80.6,
+"party_cohesion": 58.3,
+"electoral": 90.0,
+"civil_liberties": 84.6
+},
+"d": 0.0,
+"a": "stable"
+},
+"XKX": {
+"n": "Kosovo",
+"o": [
+77.1,
+77.2,
+79.0,
+77.5,
+76.3,
+76.3,
+76.2,
+76.3,
+76.2,
+76.2,
+73.6
+],
+"c": {
+"opposition_strength": 87.5,
+"accountability": 66.2,
+"party_cohesion": 75.0,
+"electoral": 70.0,
+"civil_liberties": 74.3
+},
+"d": -2.6,
+"a": "warning"
+},
+"YEM": {
+"n": "Yemen",
+"o": [
+41.3,
+33.7,
+32.2,
+33.4,
+33.5,
+31.5,
+31.5,
+33.4,
+32.0,
+32.5,
+32.7
+],
+"c": {
+"opposition_strength": 50.0,
+"accountability": 16.9,
+"party_cohesion": 38.9,
+"electoral": 35.0,
+"civil_liberties": 28.1
+},
+"d": 0.2,
+"a": "stable"
+},
+"ZAF": {
+"n": "South Africa",
+"o": [
+91.2,
+91.3,
+91.0,
+91.2,
+90.1,
+89.4,
+85.3,
+83.7,
+85.0,
+84.9,
+80.8
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 81.2,
+"party_cohesion": 63.9,
+"electoral": 90.0,
+"civil_liberties": 83.7
+},
+"d": -4.1,
+"a": "warning"
+},
+"ZMB": {
+"n": "Zambia",
+"o": [
+68.1,
+69.8,
+62.1,
+61.5,
+66.0,
+66.3,
+70.8,
+73.5,
+72.5,
+74.0,
+73.4
+],
+"c": {
+"opposition_strength": 93.8,
+"accountability": 73.2,
+"party_cohesion": 63.9,
+"electoral": 60.0,
+"civil_liberties": 82.5
+},
+"d": -0.6,
+"a": "stable"
+},
+"ZWE": {
+"n": "Zimbabwe",
+"o": [
+58.3,
+58.4,
+61.6,
+59.9,
+56.6,
+57.2,
+57.8,
+57.3,
+57.0,
+54.6,
+52.5
+],
+"c": {
+"opposition_strength": 68.8,
+"accountability": 51.4,
+"party_cohesion": 75.0,
+"electoral": 25.0,
+"civil_liberties": 41.8
+},
+"d": -2.1,
+"a": "warning"
+},
+"ZZB": {
+"n": "Zanzibar",
+"o": [
+59.8,
+58.5,
+60.2,
+60.2,
+59.7,
+59.7,
+60.1,
+60.7,
+60.7,
+61.9,
+64.5
+],
+"c": {
+"opposition_strength": 81.2,
+"accountability": 74.0,
+"party_cohesion": 63.9,
+"electoral": 35.0,
+"civil_liberties": 53.7
+},
+"d": 2.6,
+"a": "positive"
+}
+}
+}

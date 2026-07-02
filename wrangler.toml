@@ -24,11 +24,10 @@ SITE_BASE = "https://osi-tracker.REPLACE-ME.workers.dev/index.html"
 # DATA_CSV_URL = "https://.../vdem_current.csv"
 
 # --- KV namespace for the week-over-week snapshot ---
-# Create it with:  npx wrangler kv namespace create SNAPSHOT
-# then paste the returned id below.
+# NOTE: no id is set on purpose. When Cloudflare deploys this Worker from Git,
+# it auto-provisions a KV namespace for this binding — no terminal needed.
 [[kv_namespaces]]
 binding = "SNAPSHOT"
-id = "REPLACE_WITH_KV_ID"
 
 # SECRET (do NOT put here): set with
 #   npx wrangler secret put SLACK_WEBHOOK_URL

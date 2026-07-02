@@ -1,104 +1,134 @@
-# Cloudflare Setup — OSI Tracker + Weekday V-DEM Alert
+# OSI Tracker — iPhone Setup (No Terminal, No Zip)
 
-Everything runs on **one free Cloudflare account**: the public tracker site *and* the weekday Slack alert, from a single Worker. No Netlify needed. No paywall. No Perplexity credits. Cloudflare's free tier covers Workers, Cron Triggers, KV, and static assets at this volume.
+This sets up **everything on Cloudflare's free tier** from your iPhone in Safari.
+One Cloudflare Worker does two jobs:
 
-You'll do this once. Budget ~15 minutes. I've marked each step **[you]** (only you can do it) vs **[copy-paste]** (just run the command).
+1. **Serves your public tracker website** (the OSI / V-Dem dashboard).
+2. **Runs the weekday 9am Toronto Slack alert** (cron), comparing this week's
+   indicators to last week's and pinging you only when a monitored country
+   breaches the 1.5 threshold.
 
----
-
-## Step 0 — Create the Cloudflare account **[you]**
-1. Go to https://dash.cloudflare.com/sign-up
-2. Sign up with your email, verify the confirmation email, log in.
-3. You do **not** need to add a domain or a payment method. The free `*.workers.dev` subdomain is enough and costs nothing.
-
-*(You asked about Netlify too — you don't need it. Cloudflare alone hosts the site and runs the scheduler. Skip Netlify entirely.)*
+Cost at your volume: **$0**. No credit card, no domain, no subscription.
+The site lives on a free `*.workers.dev` URL and is fully public (no paywall).
 
 ---
 
-## Step 1 — Install the tools **[copy-paste]**
-On your Mac, in a terminal:
-```bash
-# Node 18+ required. Check with: node --version
-cd path/to/cloudflare-osi        # this folder
-npm install                       # installs wrangler locally
-npx wrangler login                # opens a browser → click "Allow" [you]
-```
-`wrangler login` is the only browser step here — it links this folder to your Cloudflare account.
+## What you need (5 minutes)
+
+- Your iPhone with Safari.
+- Your GitHub login (repo: `owenlippert-stack/osi-tracker`, already public).
+- A Slack **Incoming Webhook URL** (we make this in Part 3).
+
+You will **not** touch a terminal, and you will **not** unzip anything.
 
 ---
 
-## Step 2 — Create the KV store (holds the week-over-week snapshot) **[copy-paste]**
-```bash
-npx wrangler kv namespace create SNAPSHOT
-```
-It prints something like:
-```
-[[kv_namespaces]]
-binding = "SNAPSHOT"
-id = "abc123def456..."
-```
-Copy that **id** and paste it into `wrangler.toml`, replacing `REPLACE_WITH_KV_ID`.
+## Part 1 — Create your free Cloudflare account
+
+1. In Safari, go to: **https://dash.cloudflare.com/sign-up**
+2. Enter your email (`owen.lippert@gmail.com`) and a password. Tap **Sign Up**.
+3. Cloudflare emails you a verification link. Open the email, tap the link.
+4. If it asks for a plan, choose **Free**. If it asks to add a website/domain,
+   tap **skip / do this later** — you do NOT need a domain.
+
+You're now in the Cloudflare **dashboard** (https://dash.cloudflare.com).
 
 ---
 
-## Step 3 — Add your Slack webhook as a secret **[you + copy-paste]**
-1. In Slack: **Apps → Incoming Webhooks → Add to Slack**, pick the DM or channel for alerts, copy the webhook URL (starts `https://hooks.slack.com/services/...`). **[you]**
-2. Store it as a Cloudflare secret (never goes in any file):
-```bash
-npx wrangler secret put SLACK_WEBHOOK_URL
-# paste the webhook URL when prompted
-```
+## Part 2 — Deploy the Worker straight from GitHub
+
+1. In the dashboard left menu, tap **Workers & Pages**.
+2. Tap **Create application** (or **Create**).
+3. Tap the **Workers** tab, then look for **Import a repository**
+   (may be labeled "Connect to Git" / "Deploy from Git").
+4. Tap **Connect GitHub** and log into GitHub on your phone. When GitHub asks
+   which repos Cloudflare may access, allow **owenlippert-stack/osi-tracker**
+   (or "All repositories").
+5. Back on Cloudflare, select the repo **owenlippert-stack/osi-tracker**.
+6. On the configure screen, **leave the defaults** — Cloudflare reads
+   `wrangler.toml` automatically:
+   - It finds the site files in `/public` and serves them.
+   - It sets up the weekday cron schedule.
+   - It **auto-creates the KV storage** (the week-over-week memory) for you —
+     no terminal step needed.
+7. Tap **Save and Deploy**.
+
+Wait ~1 minute. When it finishes, Cloudflare shows your live URL, like:
+`https://osi-tracker.<something>.workers.dev`
+
+**Copy that URL — you'll need it in Part 4.**
+
+Open it in Safari to confirm your tracker loads. Try a deep link too, e.g.
+`https://osi-tracker.<something>.workers.dev/index.html?c=MMR` (Myanmar).
 
 ---
 
-## Step 4 — First deploy **[copy-paste]**
-```bash
-npx wrangler deploy
-```
-This publishes:
-- the **site** at `https://osi-tracker.<your-subdomain>.workers.dev/` (public, e.g. `/index.html`, `/osi_selfscan.json`)
-- the **cron alert** on the weekday schedule in `wrangler.toml`.
+## Part 3 — Make your Slack Incoming Webhook
 
-Copy your live Worker URL from the deploy output.
-
----
-
-## Step 5 — Point the alert links at your live URL **[you + copy-paste]**
-1. In `wrangler.toml`, set `SITE_BASE` to your real URL + `/index.html`, e.g.
-   `SITE_BASE = "https://osi-tracker.yourname.workers.dev/index.html"`
-2. Redeploy:
-```bash
-npx wrangler deploy
-```
-Now every Slack breach line links to `.../index.html?c=<ISO3>` and opens straight to that country.
+1. In Safari, go to: **https://api.slack.com/apps**
+2. Tap **Create New App** → **From scratch**. Name it `OSI Alerts`,
+   pick your workspace, tap **Create App**.
+3. In the app, tap **Incoming Webhooks** → toggle **On**.
+4. Tap **Add New Webhook to Workspace**, choose the channel (or your DM),
+   tap **Allow**.
+5. Copy the **Webhook URL** it gives you
+   (looks like `https://hooks.slack.com/services/T.../B.../xxxx`).
 
 ---
 
-## Step 6 — Test it end-to-end **[you]**
-Trigger the alert manually (bypasses the 9am guard) by visiting in your browser:
-```
-https://osi-tracker.<your-subdomain>.workers.dev/run-alert
-```
-- **First hit:** stores the baseline snapshot, returns "First run…". No Slack post (correct).
-- Edit `public/vdem_current.csv` to force a ≥1.5 drop in a monitored country, `npx wrangler deploy`, hit `/run-alert` again → you should get the Slack line.
-- Hit it once more with no change → "No breaches… No ping." (silent, correct).
+## Part 4 — Add your two settings in Cloudflare
 
-Once confirmed, remove or protect the `/run-alert` route if you don't want it public (see NOTE in `src/worker.js`).
+Now tell the Worker your Slack webhook and your real site URL.
+
+1. In the Cloudflare dashboard: **Workers & Pages** → tap **osi-tracker**.
+2. Tap **Settings** → **Variables and Secrets** (or **Variables**).
+3. Add a **Secret** (encrypted):
+   - Name: `SLACK_WEBHOOK_URL`
+   - Value: paste the Slack webhook URL from Part 3
+   - Tap **Encrypt** / **Save**.
+4. Add a **Variable** (plain text):
+   - Name: `SITE_BASE`
+   - Value: your real URL + `/index.html`, e.g.
+     `https://osi-tracker.<something>.workers.dev/index.html`
+   - Tap **Save**.
+5. Tap **Deploy** to apply (if prompted).
 
 ---
 
-## Keeping the data current
-The alert diffs `public/vdem_current.csv` (bundled) against the KV snapshot. To update numbers: edit that CSV → `npx wrangler deploy`. Or set `DATA_CSV_URL` in `wrangler.toml` to an external raw CSV you maintain and skip redeploys.
+## Part 5 — Test the alert now (don't wait for 9am)
 
-**Reminder about V-Dem cadence:** the official dataset is annual (v16 now, v17 ~March 2027). Week-over-week deltas are only meaningful against a working CSV *you* update — that's what `vdem_current.csv` is for.
+1. In Safari, open: `https://osi-tracker.<something>.workers.dev/run-alert`
+   This runs the alert logic immediately, bypassing the 9am guard.
+2. The **first** run just stores today's numbers as the baseline — it stays
+   silent (correct behavior). Reload `/run-alert` once more.
+3. From then on, you'll get a Slack message **only** when a monitored country
+   moves 1.5 or more versus the stored snapshot. No breach = no message.
+
+You're done. Every weekday at **9am Toronto**, the Worker checks the data and
+pings you on Slack if a monitored country breaches. The website stays live and
+public at your `*.workers.dev` URL.
 
 ---
 
-## Cost
-Cloudflare free tier: Workers (100k req/day), Cron Triggers, KV, and static assets — **all $0** at this volume. No subscription, nothing chargeable. Nothing runs on Perplexity.
+## Updating the data later
 
-## After it's working
-Turn off your old Perplexity scheduled V-DEM task yourself (I can't disable it for you).
+Your working dataset is `public/vdem_current.csv` in the GitHub repo.
+Edit it on GitHub (pencil icon → commit). Cloudflare auto-redeploys on every
+push, so the site and the alert always use your latest numbers.
 
-## Attribution
-Source: **V-Dem Country-Year Dataset v16** — Coppedge et al., *Varieties of Democracy Project*, 2026, used under **CC-BY**. OSI is an Opposition International construct, not an official V-Dem index.
+---
+
+## Monitored countries (ISO3)
+
+BGD, MMR, NPL, PHL, PAK, IND, LKA, THA, IDN, KHM, and CAN (Canada comparator).
+
+## Attribution (required)
+
+Data: **V-Dem Country-Year Dataset v16** (Coppedge et al., Varieties of
+Democracy Project, 2026), used under **CC-BY**. "OSI" is an Opposition
+International analytical construct, not an official V-Dem index.
+
+## Turn off the old Perplexity task
+
+Once Slack alerts arrive from Cloudflare, disable your old Perplexity
+scheduled V-Dem task yourself (in Perplexity) so you stop spending credits.

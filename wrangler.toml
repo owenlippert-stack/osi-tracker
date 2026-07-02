@@ -1,0 +1,34 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "osi-tracker"
+main = "src/worker.js"
+compatibility_date = "2025-06-01"
+
+# --- Static site (index.html, osi_selfscan.json, vdem_current.csv) ---
+# The Worker serves these; the tracker is public at the Worker URL.
+assets = { directory = "./public", binding = "ASSETS" }
+
+# --- Weekday alert schedule (UTC; Cloudflare cron is UTC-only) ---
+# 13:00 UTC = 9am Toronto (EDT); 14:00 UTC = 9am Toronto (EST).
+# The Worker's isNineAmToronto() guard makes the off-hour tick a no-op,
+# so the alert always lands at 9am Toronto year-round. Weekdays only.
+[triggers]
+crons = ["0 13 * * 1-5", "0 14 * * 1-5"]
+
+# --- Non-secret config ---
+[vars]
+THRESHOLD = "1.5"
+# After first deploy, set this to your real Worker URL + /index.html:
+SITE_BASE = "https://osi-tracker.REPLACE-ME.workers.dev/index.html"
+# Leave DATA_CSV_URL unset to use the bundled ./public/vdem_current.csv.
+# Or point it at an external raw CSV you maintain elsewhere.
+# DATA_CSV_URL = "https://.../vdem_current.csv"
+
+# --- KV namespace for the week-over-week snapshot ---
+# Create it with:  npx wrangler kv namespace create SNAPSHOT
+# then paste the returned id below.
+[[kv_namespaces]]
+binding = "SNAPSHOT"
+id = "REPLACE_WITH_KV_ID"
+
+# SECRET (do NOT put here): set with
+#   npx wrangler secret put SLACK_WEBHOOK_URL
